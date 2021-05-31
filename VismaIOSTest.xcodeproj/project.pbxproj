@@ -1,0 +1,793 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		020B692BF20AB913204ACE9D /* Pods_VismaIOSTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8EBB505AD59F1437CE126BD /* Pods_VismaIOSTest.framework */; };
+		B40F3B87F4AD9CA17E3A6D6F /* Pods_VismaIOSTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C8710B39B4C1739543711D1 /* Pods_VismaIOSTestTests.framework */; };
+		C478221E2664EA8E00CAFA0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C478221D2664EA8E00CAFA0A /* AppDelegate.swift */; };
+		C47822202664EA8E00CAFA0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C478221F2664EA8E00CAFA0A /* SceneDelegate.swift */; };
+		C47822222664EA8E00CAFA0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47822212664EA8E00CAFA0A /* ViewController.swift */; };
+		C47822252664EA8E00CAFA0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C47822232664EA8E00CAFA0A /* Main.storyboard */; };
+		C47822272664EA9300CAFA0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C47822262664EA9300CAFA0A /* Assets.xcassets */; };
+		C478222A2664EA9300CAFA0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C47822282664EA9300CAFA0A /* LaunchScreen.storyboard */; };
+		C47822352664EA9300CAFA0A /* VismaIOSTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47822342664EA9300CAFA0A /* VismaIOSTestTests.swift */; };
+		C47822402664EA9300CAFA0A /* VismaIOSTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C478223F2664EA9300CAFA0A /* VismaIOSTestUITests.swift */; };
+		C4C51CF72664F2EC00860EBD /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = C4C51CF62664F2EB00860EBD /* Podfile */; };
+		E9D933BD32BD6AF7E3C57B1A /* Pods_VismaIOSTest_VismaIOSTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D8F945C08D3F153A3B3101 /* Pods_VismaIOSTest_VismaIOSTestUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C47822312664EA9300CAFA0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C47822122664EA8E00CAFA0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C47822192664EA8E00CAFA0A;
+			remoteInfo = VismaIOSTest;
+		};
+		C478223C2664EA9300CAFA0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C47822122664EA8E00CAFA0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C47822192664EA8E00CAFA0A;
+			remoteInfo = VismaIOSTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		289294CEA54BF0F4CD7ACA7E /* Pods-VismaIOSTest-VismaIOSTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VismaIOSTest-VismaIOSTestUITests.release.xcconfig"; path = "Target Support Files/Pods-VismaIOSTest-VismaIOSTestUITests/Pods-VismaIOSTest-VismaIOSTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6430F2474E16E9B6BBCF4644 /* Pods-VismaIOSTest-VismaIOSTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VismaIOSTest-VismaIOSTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-VismaIOSTest-VismaIOSTestUITests/Pods-VismaIOSTest-VismaIOSTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7C2EFB68F418535B25A469EF /* Pods-VismaIOSTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VismaIOSTest.debug.xcconfig"; path = "Target Support Files/Pods-VismaIOSTest/Pods-VismaIOSTest.debug.xcconfig"; sourceTree = "<group>"; };
+		7C8710B39B4C1739543711D1 /* Pods_VismaIOSTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VismaIOSTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89C53CEDC1AAD632DAC22B27 /* Pods-VismaIOSTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VismaIOSTestTests.release.xcconfig"; path = "Target Support Files/Pods-VismaIOSTestTests/Pods-VismaIOSTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		A8EBB505AD59F1437CE126BD /* Pods_VismaIOSTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VismaIOSTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D8F945C08D3F153A3B3101 /* Pods_VismaIOSTest_VismaIOSTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VismaIOSTest_VismaIOSTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C478221A2664EA8E00CAFA0A /* VismaIOSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VismaIOSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C478221D2664EA8E00CAFA0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C478221F2664EA8E00CAFA0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C47822212664EA8E00CAFA0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C47822242664EA8E00CAFA0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C47822262664EA9300CAFA0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C47822292664EA9300CAFA0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C478222B2664EA9300CAFA0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C47822302664EA9300CAFA0A /* VismaIOSTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VismaIOSTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C47822342664EA9300CAFA0A /* VismaIOSTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VismaIOSTestTests.swift; sourceTree = "<group>"; };
+		C47822362664EA9300CAFA0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C478223B2664EA9300CAFA0A /* VismaIOSTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VismaIOSTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C478223F2664EA9300CAFA0A /* VismaIOSTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VismaIOSTestUITests.swift; sourceTree = "<group>"; };
+		C47822412664EA9300CAFA0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4C51CF62664F2EB00860EBD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		D3F9836B7CD5858462BEC3E7 /* Pods-VismaIOSTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VismaIOSTest.release.xcconfig"; path = "Target Support Files/Pods-VismaIOSTest/Pods-VismaIOSTest.release.xcconfig"; sourceTree = "<group>"; };
+		ECF5DF1481F0766B809F7192 /* Pods-VismaIOSTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VismaIOSTestTests.debug.xcconfig"; path = "Target Support Files/Pods-VismaIOSTestTests/Pods-VismaIOSTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C47822172664EA8E00CAFA0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				020B692BF20AB913204ACE9D /* Pods_VismaIOSTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C478222D2664EA9300CAFA0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B40F3B87F4AD9CA17E3A6D6F /* Pods_VismaIOSTestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C47822382664EA9300CAFA0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9D933BD32BD6AF7E3C57B1A /* Pods_VismaIOSTest_VismaIOSTestUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		814FA4597F28E9C2B1EFD8FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C2EFB68F418535B25A469EF /* Pods-VismaIOSTest.debug.xcconfig */,
+				D3F9836B7CD5858462BEC3E7 /* Pods-VismaIOSTest.release.xcconfig */,
+				6430F2474E16E9B6BBCF4644 /* Pods-VismaIOSTest-VismaIOSTestUITests.debug.xcconfig */,
+				289294CEA54BF0F4CD7ACA7E /* Pods-VismaIOSTest-VismaIOSTestUITests.release.xcconfig */,
+				ECF5DF1481F0766B809F7192 /* Pods-VismaIOSTestTests.debug.xcconfig */,
+				89C53CEDC1AAD632DAC22B27 /* Pods-VismaIOSTestTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BDF5F061E9FBBC474F0FBC2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8EBB505AD59F1437CE126BD /* Pods_VismaIOSTest.framework */,
+				B6D8F945C08D3F153A3B3101 /* Pods_VismaIOSTest_VismaIOSTestUITests.framework */,
+				7C8710B39B4C1739543711D1 /* Pods_VismaIOSTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C47822112664EA8E00CAFA0A = {
+			isa = PBXGroup;
+			children = (
+				C478221C2664EA8E00CAFA0A /* VismaIOSTest */,
+				C47822332664EA9300CAFA0A /* VismaIOSTestTests */,
+				C478223E2664EA9300CAFA0A /* VismaIOSTestUITests */,
+				C478221B2664EA8E00CAFA0A /* Products */,
+				814FA4597F28E9C2B1EFD8FB /* Pods */,
+				BDF5F061E9FBBC474F0FBC2A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C478221B2664EA8E00CAFA0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C478221A2664EA8E00CAFA0A /* VismaIOSTest.app */,
+				C47822302664EA9300CAFA0A /* VismaIOSTestTests.xctest */,
+				C478223B2664EA9300CAFA0A /* VismaIOSTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C478221C2664EA8E00CAFA0A /* VismaIOSTest */ = {
+			isa = PBXGroup;
+			children = (
+				C4C51CF62664F2EB00860EBD /* Podfile */,
+				C478221D2664EA8E00CAFA0A /* AppDelegate.swift */,
+				C478221F2664EA8E00CAFA0A /* SceneDelegate.swift */,
+				C47822212664EA8E00CAFA0A /* ViewController.swift */,
+				C47822232664EA8E00CAFA0A /* Main.storyboard */,
+				C47822262664EA9300CAFA0A /* Assets.xcassets */,
+				C47822282664EA9300CAFA0A /* LaunchScreen.storyboard */,
+				C478222B2664EA9300CAFA0A /* Info.plist */,
+			);
+			path = VismaIOSTest;
+			sourceTree = "<group>";
+		};
+		C47822332664EA9300CAFA0A /* VismaIOSTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				C47822342664EA9300CAFA0A /* VismaIOSTestTests.swift */,
+				C47822362664EA9300CAFA0A /* Info.plist */,
+			);
+			path = VismaIOSTestTests;
+			sourceTree = "<group>";
+		};
+		C478223E2664EA9300CAFA0A /* VismaIOSTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C478223F2664EA9300CAFA0A /* VismaIOSTestUITests.swift */,
+				C47822412664EA9300CAFA0A /* Info.plist */,
+			);
+			path = VismaIOSTestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C47822192664EA8E00CAFA0A /* VismaIOSTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C47822442664EA9300CAFA0A /* Build configuration list for PBXNativeTarget "VismaIOSTest" */;
+			buildPhases = (
+				611F5EED7AED79C5D102312F /* [CP] Check Pods Manifest.lock */,
+				C47822162664EA8E00CAFA0A /* Sources */,
+				C47822172664EA8E00CAFA0A /* Frameworks */,
+				C47822182664EA8E00CAFA0A /* Resources */,
+				FC7E8CEB89A4CA64778A1870 /* [CP] Embed Pods Frameworks */,
+				AAE160FC53A304F61606BDBA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VismaIOSTest;
+			productName = VismaIOSTest;
+			productReference = C478221A2664EA8E00CAFA0A /* VismaIOSTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C478222F2664EA9300CAFA0A /* VismaIOSTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C47822472664EA9300CAFA0A /* Build configuration list for PBXNativeTarget "VismaIOSTestTests" */;
+			buildPhases = (
+				D88E58328A20B71D15822E9D /* [CP] Check Pods Manifest.lock */,
+				C478222C2664EA9300CAFA0A /* Sources */,
+				C478222D2664EA9300CAFA0A /* Frameworks */,
+				C478222E2664EA9300CAFA0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C47822322664EA9300CAFA0A /* PBXTargetDependency */,
+			);
+			name = VismaIOSTestTests;
+			productName = VismaIOSTestTests;
+			productReference = C47822302664EA9300CAFA0A /* VismaIOSTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C478223A2664EA9300CAFA0A /* VismaIOSTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C478224A2664EA9300CAFA0A /* Build configuration list for PBXNativeTarget "VismaIOSTestUITests" */;
+			buildPhases = (
+				5701C9008D98D045F4A23342 /* [CP] Check Pods Manifest.lock */,
+				C47822372664EA9300CAFA0A /* Sources */,
+				C47822382664EA9300CAFA0A /* Frameworks */,
+				C47822392664EA9300CAFA0A /* Resources */,
+				D98A4F3CB8B2486A67B98689 /* [CP] Embed Pods Frameworks */,
+				3334C5C30D024BB018B1B16B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C478223D2664EA9300CAFA0A /* PBXTargetDependency */,
+			);
+			name = VismaIOSTestUITests;
+			productName = VismaIOSTestUITests;
+			productReference = C478223B2664EA9300CAFA0A /* VismaIOSTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C47822122664EA8E00CAFA0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C47822192664EA8E00CAFA0A = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					C478222F2664EA9300CAFA0A = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = C47822192664EA8E00CAFA0A;
+					};
+					C478223A2664EA9300CAFA0A = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = C47822192664EA8E00CAFA0A;
+					};
+				};
+			};
+			buildConfigurationList = C47822152664EA8E00CAFA0A /* Build configuration list for PBXProject "VismaIOSTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C47822112664EA8E00CAFA0A;
+			productRefGroup = C478221B2664EA8E00CAFA0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C47822192664EA8E00CAFA0A /* VismaIOSTest */,
+				C478222F2664EA9300CAFA0A /* VismaIOSTestTests */,
+				C478223A2664EA9300CAFA0A /* VismaIOSTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C47822182664EA8E00CAFA0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C478222A2664EA9300CAFA0A /* LaunchScreen.storyboard in Resources */,
+				C47822272664EA9300CAFA0A /* Assets.xcassets in Resources */,
+				C4C51CF72664F2EC00860EBD /* Podfile in Resources */,
+				C47822252664EA8E00CAFA0A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C478222E2664EA9300CAFA0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C47822392664EA9300CAFA0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3334C5C30D024BB018B1B16B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VismaIOSTest-VismaIOSTestUITests/Pods-VismaIOSTest-VismaIOSTestUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VismaIOSTest-VismaIOSTestUITests/Pods-VismaIOSTest-VismaIOSTestUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VismaIOSTest-VismaIOSTestUITests/Pods-VismaIOSTest-VismaIOSTestUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5701C9008D98D045F4A23342 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VismaIOSTest-VismaIOSTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		611F5EED7AED79C5D102312F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VismaIOSTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAE160FC53A304F61606BDBA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VismaIOSTest/Pods-VismaIOSTest-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VismaIOSTest/Pods-VismaIOSTest-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VismaIOSTest/Pods-VismaIOSTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D88E58328A20B71D15822E9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VismaIOSTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D98A4F3CB8B2486A67B98689 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VismaIOSTest-VismaIOSTestUITests/Pods-VismaIOSTest-VismaIOSTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VismaIOSTest-VismaIOSTestUITests/Pods-VismaIOSTest-VismaIOSTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VismaIOSTest-VismaIOSTestUITests/Pods-VismaIOSTest-VismaIOSTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC7E8CEB89A4CA64778A1870 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VismaIOSTest/Pods-VismaIOSTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VismaIOSTest/Pods-VismaIOSTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VismaIOSTest/Pods-VismaIOSTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C47822162664EA8E00CAFA0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C47822222664EA8E00CAFA0A /* ViewController.swift in Sources */,
+				C478221E2664EA8E00CAFA0A /* AppDelegate.swift in Sources */,
+				C47822202664EA8E00CAFA0A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C478222C2664EA9300CAFA0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C47822352664EA9300CAFA0A /* VismaIOSTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C47822372664EA9300CAFA0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C47822402664EA9300CAFA0A /* VismaIOSTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C47822322664EA9300CAFA0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C47822192664EA8E00CAFA0A /* VismaIOSTest */;
+			targetProxy = C47822312664EA9300CAFA0A /* PBXContainerItemProxy */;
+		};
+		C478223D2664EA9300CAFA0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C47822192664EA8E00CAFA0A /* VismaIOSTest */;
+			targetProxy = C478223C2664EA9300CAFA0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C47822232664EA8E00CAFA0A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C47822242664EA8E00CAFA0A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C47822282664EA9300CAFA0A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C47822292664EA9300CAFA0A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C47822422664EA9300CAFA0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C47822432664EA9300CAFA0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C47822452664EA9300CAFA0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C2EFB68F418535B25A469EF /* Pods-VismaIOSTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GC4L2QMZ47;
+				INFOPLIST_FILE = VismaIOSTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HRS.VismaIOSTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C47822462664EA9300CAFA0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3F9836B7CD5858462BEC3E7 /* Pods-VismaIOSTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GC4L2QMZ47;
+				INFOPLIST_FILE = VismaIOSTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HRS.VismaIOSTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C47822482664EA9300CAFA0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECF5DF1481F0766B809F7192 /* Pods-VismaIOSTestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GC4L2QMZ47;
+				INFOPLIST_FILE = VismaIOSTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HRS.VismaIOSTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VismaIOSTest.app/VismaIOSTest";
+			};
+			name = Debug;
+		};
+		C47822492664EA9300CAFA0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89C53CEDC1AAD632DAC22B27 /* Pods-VismaIOSTestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GC4L2QMZ47;
+				INFOPLIST_FILE = VismaIOSTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HRS.VismaIOSTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VismaIOSTest.app/VismaIOSTest";
+			};
+			name = Release;
+		};
+		C478224B2664EA9300CAFA0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6430F2474E16E9B6BBCF4644 /* Pods-VismaIOSTest-VismaIOSTestUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GC4L2QMZ47;
+				INFOPLIST_FILE = VismaIOSTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HRS.VismaIOSTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VismaIOSTest;
+			};
+			name = Debug;
+		};
+		C478224C2664EA9300CAFA0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 289294CEA54BF0F4CD7ACA7E /* Pods-VismaIOSTest-VismaIOSTestUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GC4L2QMZ47;
+				INFOPLIST_FILE = VismaIOSTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HRS.VismaIOSTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VismaIOSTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C47822152664EA8E00CAFA0A /* Build configuration list for PBXProject "VismaIOSTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C47822422664EA9300CAFA0A /* Debug */,
+				C47822432664EA9300CAFA0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C47822442664EA9300CAFA0A /* Build configuration list for PBXNativeTarget "VismaIOSTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C47822452664EA9300CAFA0A /* Debug */,
+				C47822462664EA9300CAFA0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C47822472664EA9300CAFA0A /* Build configuration list for PBXNativeTarget "VismaIOSTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C47822482664EA9300CAFA0A /* Debug */,
+				C47822492664EA9300CAFA0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C478224A2664EA9300CAFA0A /* Build configuration list for PBXNativeTarget "VismaIOSTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C478224B2664EA9300CAFA0A /* Debug */,
+				C478224C2664EA9300CAFA0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C47822122664EA8E00CAFA0A /* Project object */;
+}
