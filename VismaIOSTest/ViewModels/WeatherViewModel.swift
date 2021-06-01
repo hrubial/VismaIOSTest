@@ -19,6 +19,10 @@ class WeatherViewModel {
         locationManager.startUpdating()
     }
 
+    deinit {
+        stopUpdating()
+    }
+    
     func stopUpdating() {
         locationManager.stopUpdating()
     }

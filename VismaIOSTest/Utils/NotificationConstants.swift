@@ -9,4 +9,5 @@ import Foundation
 
 extension Notification.Name {
     static let userUpdatedKey = NSNotification.Name("VismaIOSTest.DataManager.userUpdated")
+    static let producerConsumerBufferStateChangeKey = NSNotification.Name("VismaIOSTest.ProducerConsumerBuffer.bufferStateChange")
 }

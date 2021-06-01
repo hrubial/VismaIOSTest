@@ -8,8 +8,8 @@
 import Foundation
 
 struct GoogleUser {
-    var userId:String
-    var name:String
-    var email:String
-    var token:String
+    var userId: String
+    var name: String
+    var email: String
+    var token: String
 }
