@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum WeatherApiError: Error {
+enum WeatherApiError:Error {
     case urlCreation
     case dataParsing
 }

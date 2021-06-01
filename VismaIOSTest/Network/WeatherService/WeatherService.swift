@@ -8,20 +8,22 @@
 import Foundation
 
 class WeatherService {
-    func getWeather(latitude:Double, longitude:Double, completion: @escaping (Result<WeatherObj, WeatherApiError>) -> Void) {
+    func getWeather(latitude:Double, longitude:Double, completion: @escaping (WeatherObj?, WeatherApiError?) -> Void) {
         let builder = WeatherUrlBuilder(latitude: latitude, longitude: longitude)
-
         guard let url = builder.build() else {
-            return completion(.failure(.urlCreation))
+            return completion(nil, WeatherApiError.urlCreation)
         }
-
         let task = URLSession.shared.dataTask(with: url) { data, _, error in
             if error == nil {
                 let parser = WeatherResponseParser(data: data)
                 let result = parser.parse()
-
                 DispatchQueue.main.async {
-                    completion(result)
+                    do {
+                        let weatherObj = try result.get()
+                        completion(weatherObj, nil)
+                    } catch {
+                        return completion(nil, WeatherApiError.dataParsing)
+                    }
                 }
             }
         }

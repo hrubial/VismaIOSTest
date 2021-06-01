@@ -13,4 +13,11 @@ class WeatherViewController: UIViewController {
     @IBOutlet weak var conditionLabel: UILabel!
 
     @IBOutlet weak var gpsStatusLabel: UILabel!
+
+    var weatherViewModel: WeatherViewModel?
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        weatherViewModel = WeatherViewModel(weatherViewController: self)
+    }
 }
