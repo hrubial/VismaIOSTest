@@ -8,16 +8,24 @@
 import UIKit
 
 class WeatherViewController: UIViewController {
+    var weatherViewModel: WeatherViewModel?
+
+
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var conditionLabel: UILabel!
 
     @IBOutlet weak var gpsStatusLabel: UILabel!
 
-    var weatherViewModel: WeatherViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         weatherViewModel = WeatherViewModel(weatherViewController: self)
+    }
+
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        weatherViewModel?.stopUpdating()
     }
 }

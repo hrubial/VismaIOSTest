@@ -16,7 +16,6 @@ enum LocationManagerError: Error {
 }
 
 
-
 extension LocationManagerError: LocalizedError {
     public var errorDescription: String? {
         switch self {

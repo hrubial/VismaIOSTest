@@ -6,11 +6,14 @@
 //
 
 import UIKit
+import GoogleSignIn
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        // Initialize sign-in
+        GIDSignIn.sharedInstance().clientID = "904273904294-a024lmogng9g498ru5ln2avj0lj8q81k.apps.googleusercontent.com"
+        GIDSignIn.sharedInstance().delegate = self
         return true
     }
 
@@ -27,4 +30,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+}
+
+
+
+
+extension AppDelegate: GIDSignInDelegate{
+
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
+      return GIDSignIn.sharedInstance().handle(url)
+    }
+
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if let error = error {
+          if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
+            print("The user has not signed in before or they have since signed out.")
+          } else {
+            print("\(error.localizedDescription)")
+          }
+          return
+        }
+        // Perform any operations on signed in user here.
+        let googleUser = GoogleUser(
+            userId: user.userID,
+            name: user.profile.name,
+            email: user.profile.email,
+            token: user.authentication.idToken
+        )
+        DataManager.shared.user = googleUser
+    }
+
+    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!,
+              withError error: Error!) {
+        DataManager.shared.user = nil
+    }
+
 }
