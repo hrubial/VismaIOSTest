@@ -32,7 +32,6 @@ struct ProducerConsumerBuffer<T> {
                 success = false
             } else {
                 elements.append(value)
-                notificationCenter.post(name: .producerConsumerBufferChangeKey, object: nil)
                 isFull = (size >= maxSize)
             }
             lock = false
@@ -49,7 +48,6 @@ struct ProducerConsumerBuffer<T> {
                 return nil
             }
             let returnElement = elements.removeFirst()
-            notificationCenter.post(name: .producerConsumerBufferChangeKey, object: nil)
             isEmpty = elements.isEmpty
             lock = false
             return returnElement
@@ -66,7 +64,7 @@ struct ProducerConsumerBuffer<T> {
         return elements.last
     }
 
-    var size:Int {
+    var size: Int {
         get {
             elements.count
         }

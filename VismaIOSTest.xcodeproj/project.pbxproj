@@ -39,11 +39,8 @@
 		C4D12A6B2666B12500BFDBD8 /* NotificationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D12A6A2666B12500BFDBD8 /* NotificationConstants.swift */; };
 		C4D12A6D2666B79900BFDBD8 /* ArrayTupleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D12A6C2666B79900BFDBD8 /* ArrayTupleViewController.swift */; };
 		C4D12A6F2666B7E700BFDBD8 /* ArrayTupleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D12A6E2666B7E700BFDBD8 /* ArrayTupleViewModel.swift */; };
-		C4D12A732666CDFB00BFDBD8 /* ProducerConsumerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D12A722666CDFB00BFDBD8 /* ProducerConsumerViewController.swift */; };
-		C4D12A752666CE1100BFDBD8 /* ProducerConsumerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D12A742666CE1100BFDBD8 /* ProducerConsumerViewModel.swift */; };
 		C4D12A7A2666D16200BFDBD8 /* ProducerConsumerBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D12A792666D16200BFDBD8 /* ProducerConsumerBuffer.swift */; };
 		C4D12A7C2666D6FF00BFDBD8 /* ProducerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D12A7B2666D6FF00BFDBD8 /* ProducerClass.swift */; };
-		C4D12A7E2666D70C00BFDBD8 /* ConsumerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D12A7D2666D70C00BFDBD8 /* ConsumerClass.swift */; };
 		E9D933BD32BD6AF7E3C57B1A /* Pods_VismaIOSTest_VismaIOSTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D8F945C08D3F153A3B3101 /* Pods_VismaIOSTest_VismaIOSTestUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -108,11 +105,8 @@
 		C4D12A6A2666B12500BFDBD8 /* NotificationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationConstants.swift; sourceTree = "<group>"; };
 		C4D12A6C2666B79900BFDBD8 /* ArrayTupleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTupleViewController.swift; sourceTree = "<group>"; };
 		C4D12A6E2666B7E700BFDBD8 /* ArrayTupleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTupleViewModel.swift; sourceTree = "<group>"; };
-		C4D12A722666CDFB00BFDBD8 /* ProducerConsumerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProducerConsumerViewController.swift; sourceTree = "<group>"; };
-		C4D12A742666CE1100BFDBD8 /* ProducerConsumerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProducerConsumerViewModel.swift; sourceTree = "<group>"; };
 		C4D12A792666D16200BFDBD8 /* ProducerConsumerBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProducerConsumerBuffer.swift; sourceTree = "<group>"; };
 		C4D12A7B2666D6FF00BFDBD8 /* ProducerClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProducerClass.swift; sourceTree = "<group>"; };
-		C4D12A7D2666D70C00BFDBD8 /* ConsumerClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumerClass.swift; sourceTree = "<group>"; };
 		D3F9836B7CD5858462BEC3E7 /* Pods-VismaIOSTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VismaIOSTest.release.xcconfig"; path = "Target Support Files/Pods-VismaIOSTest/Pods-VismaIOSTest.release.xcconfig"; sourceTree = "<group>"; };
 		ECF5DF1481F0766B809F7192 /* Pods-VismaIOSTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VismaIOSTestTests.debug.xcconfig"; path = "Target Support Files/Pods-VismaIOSTestTests/Pods-VismaIOSTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -236,7 +230,6 @@
 				C4D12A472665045300BFDBD8 /* WeatherViewController.swift */,
 				C4D12A6126669BD800BFDBD8 /* GoogleOAuthLoginViewController.swift */,
 				C4D12A6C2666B79900BFDBD8 /* ArrayTupleViewController.swift */,
-				C4D12A722666CDFB00BFDBD8 /* ProducerConsumerViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -247,7 +240,6 @@
 				C4D12A442665020F00BFDBD8 /* WeatherViewModel.swift */,
 				C4D12A682666A1FD00BFDBD8 /* GoogleOAuthLoginViewModel.swift */,
 				C4D12A6E2666B7E700BFDBD8 /* ArrayTupleViewModel.swift */,
-				C4D12A742666CE1100BFDBD8 /* ProducerConsumerViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -316,7 +308,6 @@
 			children = (
 				C4D12A792666D16200BFDBD8 /* ProducerConsumerBuffer.swift */,
 				C4D12A7B2666D6FF00BFDBD8 /* ProducerClass.swift */,
-				C4D12A7D2666D70C00BFDBD8 /* ConsumerClass.swift */,
 			);
 			path = ProducerConsumer;
 			sourceTree = "<group>";
@@ -620,18 +611,15 @@
 				C4D12A6F2666B7E700BFDBD8 /* ArrayTupleViewModel.swift in Sources */,
 				C478221E2664EA8E00CAFA0A /* AppDelegate.swift in Sources */,
 				C4D12A7A2666D16200BFDBD8 /* ProducerConsumerBuffer.swift in Sources */,
-				C4D12A752666CE1100BFDBD8 /* ProducerConsumerViewModel.swift in Sources */,
 				C4D12A452665020F00BFDBD8 /* WeatherViewModel.swift in Sources */,
 				C4D12A6226669BD800BFDBD8 /* GoogleOAuthLoginViewController.swift in Sources */,
 				C4D12A522665163500BFDBD8 /* WeatherResponseParser.swift in Sources */,
-				C4D12A7E2666D70C00BFDBD8 /* ConsumerClass.swift in Sources */,
 				C47822202664EA8E00CAFA0A /* SceneDelegate.swift in Sources */,
 				C4D12A60266557F800BFDBD8 /* LocationManagerStatus.swift in Sources */,
 				C4D12A672666A08900BFDBD8 /* GoogleUser.swift in Sources */,
 				C4D12A692666A1FD00BFDBD8 /* GoogleOAuthLoginViewModel.swift in Sources */,
 				C4D12A6426669F0000BFDBD8 /* DataManager.swift in Sources */,
 				C4D12A5E266554FF00BFDBD8 /* LocationManagerError.swift in Sources */,
-				C4D12A732666CDFB00BFDBD8 /* ProducerConsumerViewController.swift in Sources */,
 				C4D12A582665389500BFDBD8 /* WeatherApiError.swift in Sources */,
 				C4D12A6D2666B79900BFDBD8 /* ArrayTupleViewController.swift in Sources */,
 				C4D12A482665045300BFDBD8 /* WeatherViewController.swift in Sources */,
