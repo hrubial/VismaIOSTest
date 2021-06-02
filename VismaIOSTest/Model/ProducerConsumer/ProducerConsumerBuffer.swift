@@ -10,16 +10,16 @@ import Foundation
 
 struct ProducerConsumerBuffer<T> {
     var notificationCenter = NotificationCenter.default
-    private var elements: [T] = []
+    var elements: [T] = []
     var maxSize = 10
-    var lock:Bool = false
-    var isFull:Bool = false {
-        didSet{
+    var lock = false
+    var isFull = false {
+        didSet {
             notificationCenter.post(name: .producerConsumerBufferStateChangeKey, object: nil)
         }
     }
-    var isEmpty:Bool = false {
-        didSet{
+    var isEmpty = false {
+        didSet {
             notificationCenter.post(name: .producerConsumerBufferStateChangeKey, object: nil)
         }
     }
@@ -32,6 +32,7 @@ struct ProducerConsumerBuffer<T> {
                 success = false
             } else {
                 elements.append(value)
+                notificationCenter.post(name: .producerConsumerBufferChangeKey, object: nil)
                 isFull = (size >= maxSize)
             }
             lock = false
@@ -47,7 +48,8 @@ struct ProducerConsumerBuffer<T> {
             guard !elements.isEmpty else {
                 return nil
             }
-            let returnElement =  elements.removeFirst()
+            let returnElement = elements.removeFirst()
+            notificationCenter.post(name: .producerConsumerBufferChangeKey, object: nil)
             isEmpty = elements.isEmpty
             lock = false
             return returnElement
